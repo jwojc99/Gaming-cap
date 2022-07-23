@@ -1,0 +1,201 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "Titan One", cursive;
+}
+body {
+	background-color: rgb(181, 149, 191);
+	color: rgb(13, 17, 27);
+	overflow-x: hidden;
+}
+a:link,
+a:visited {
+	text-decoration: none;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	margin: 30px 70px;
+}
+
+.page-name {
+	color: black;
+	font-size: 32px;
+	display: flex;
+}
+li {
+	list-style: none;
+}
+.main-nav-list {
+	margin: 15px;
+	font-size: 24px;
+	display: flex;
+	gap: 40px;
+}
+.main-nav-list a {
+	color: rgb(13, 17, 27);
+	transition: 0.3s;
+}
+.main-nav-list a:hover {
+	color: rgb(35, 20, 120);
+}
+.heading-text {
+	color: rgb(23, 0, 116);
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+.regular-text {
+	/* margin-top: 15px; */
+	font-size: 20px;
+	line-height: 1.3;
+	letter-spacing: 0.2px;
+}
+main {
+	margin: 50px 96px;
+	display: grid;
+	grid-template-columns: 1.2fr 0.8fr;
+	gap: 80px;
+}
+section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 32px;
+	border-radius: 10px;
+	height: 480px;
+	box-shadow: 0 0 10px 5px rgba(97, 96, 96, 0.181);
+}
+.info-section {
+	background-color: rgb(135, 118, 167);
+}
+.games-section {
+	background-color: rgb(223, 228, 167);
+}
+.games-content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.games {
+	height: 80%;
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 40px;
+	justify-content: space-around;
+	align-items: center;
+}
+.game {
+	color: rgb(13, 17, 27);
+	font-size: 18px;
+	padding: 25px 10px;
+	text-align: center;
+	background-color: rgb(231, 246, 98);
+	transform: translateX(0);
+	transition: 0.5s;
+}
+.game:hover {
+	background-color: rgb(229, 246, 81);
+	transform: translateX(-8px);
+	box-shadow: 0 4px 5px 5px rgba(127, 126, 126, 0.164);
+	cursor: pointer;
+}
+.game:active {
+	background-color: rgb(233, 255, 71);
+	color: rgb(114, 34, 189);
+}
+
+.questions-box {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+.questions-box p,
+.questions-box img {
+	/* text-align: center; */
+	justify-content: center;
+	align-self: center;
+}
+.answers-box {
+	margin: 20px 0;
+}
+
+button,
+.btn {
+	text-decoration: none;
+	border-radius: 10px;
+	border: none;
+	box-shadow: 0 0 5px 5px rgba(86, 86, 86, 0.122);
+}
+button:active,
+.btn:active {
+	box-shadow: 0 0 5px 5px rgba(86, 86, 86, 0.038);
+}
+.surprise-btn {
+	padding: 5px;
+	color: rgb(240, 237, 93);
+	background-color: rgb(47, 40, 105);
+	transition: 0.3s;
+}
+.surprise-btn:hover {
+	background-color: rgb(57, 44, 143);
+}
+.meme {
+	display: none;
+	margin: 15px 0;
+	border-radius: 10px;
+}
+/* -------------- FOOTER ----------- */
+.footer {
+	margin-top: 80px;
+	box-shadow: 0 0 10px 5px rgba(88, 87, 87, 0.174);
+	background-color: rgb(149, 106, 161);
+	font-size: 15px;
+}
+.footer-container {
+	padding: 20px 40px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+	justify-items: center;
+}
+.contact-info {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	align-items: center;
+}
+
+.footer-name {
+	font-size: 18px;
+}
+.social-links {
+	list-style: none;
+	display: flex;
+	gap: 10px;
+}
+.footer-link:link,
+.footer-link:visited {
+	text-decoration: none;
+	font-size: 20px;
+	color: #030d1b;
+	transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+	color: rgb(45, 14, 45);
+}
+/*  MOBILE */
+.btn-mobile-nav {
+	border: none;
+	background: none;
+	cursor: pointer;
+	display: none;
+}
+.icon-mobile-nav {
+	height: 48px;
+	width: 48px;
+	color: #333;
+}
+.icon-mobile-nav[name="close-outline"] {
+	display: none;
+}

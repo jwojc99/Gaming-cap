@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule=""
+			src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+		></script>
+		<title>Document</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500&family=Titan+One&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../main-page.css" />
+		<link rel="stylesheet" href="./hide&seek.css" />
+		<link rel="stylesheet" href="../queries.css" />
+	</head>
+	<body>
+		<header>
+			<a href="../game-page.html">
+				<div class="page-name">
+					Gaming cap
+					<div class="logo">
+						<img
+							src="https://img.icons8.com/external-victoruler-solid-victoruler/64/000000/external-cap-clothes-and-outfit-victoruler-solid-victoruler.png"
+							width="40px"
+						/>
+					</div>
+				</div>
+			</a>
+			<nav>
+				<ul class="main-nav-list">
+					<a href="../current-snake/snake.html"><li>Snake</li></a>
+					<a href="../hide&seek/index.html"><li>Hide&Seek</li></a>
+					<a href="../game-page.html"><li>About us</li></a>
+				</ul>
+			</nav>
+			<button class="btn-mobile-nav">
+				<ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+				<ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+			</button>
+		</header>
+		<div class="game-content">
+			<div class="text-content">
+				<h3 class="after-found">Congrats! You found it</h3>
+				<h3 class="to-hide">Click the square to play hide&seek</h3>
+				<p class="smaller-text"></p>
+			</div>
+
+			<div class="hidden-thing"></div>
+			<div class="shadow"></div>
+		</div>
+		<script src="./app.js"></script>
+		<script>
+			const btnNavEl = document.querySelector(".btn-mobile-nav");
+			const headerNavEl = document.querySelector("header");
+
+			btnNavEl.addEventListener("click", function () {
+				headerNavEl.classList.toggle("nav-open");
+				headerNavEl.classList.toggle("no-margs");
+			});
+		</script>
+	</body>
+</html>
