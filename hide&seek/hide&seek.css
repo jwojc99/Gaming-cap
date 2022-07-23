@@ -10,7 +10,9 @@
 .text-content p {
 	display: block;
 }
-
+.after-found {
+	visibility: hidden;
+}
 .hidden-thing {
 	width: 150px;
 	height: 150px;

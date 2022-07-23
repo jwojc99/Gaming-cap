@@ -30,21 +30,21 @@ document.body.addEventListener("click", () => {
 });
 
 square.addEventListener("click", () => {
+	// counter++;
 	objFound = !objFound;
 	backGr.classList.toggle("dark");
 	square.classList.toggle("dark");
 
 	if (objFound) {
-		textCongrats.style.visibility = "visible";
-
-		smallerText.innerHTML = `You manage to find square after ${counter} attempts. To play again click the square.`;
-		smallerText.style.visibility = "visible";
-
 		setTimeout(() => {
 			square.style.left = 50 + "%";
 			square.style.top = 50 + "%";
 			square.style.transform = "translate(-50%, -50%)";
-		}, 2000);
+			textCongrats.style.visibility = "visible";
+
+			smallerText.innerHTML = `You manage to find square after ${counter} attempts. To play again click the square.`;
+			smallerText.style.visibility = "visible";
+		}, 1000);
 	} else {
 		hideSquare();
 	}
